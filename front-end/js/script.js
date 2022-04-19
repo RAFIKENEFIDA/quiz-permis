@@ -137,7 +137,7 @@ function showResult(){
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 4){ // if user scored more than 3
+    if (userScore > 30){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
         localStorage.setItem('score', userScore);
         let scoreTag = '<span>  <p>'+questions.length  +'</p> على <p>'+ userScore +'</p>  مبروك أنت حصلت  على 🎉</span>';
